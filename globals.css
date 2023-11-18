@@ -602,7 +602,7 @@ button {
   margin-right: auto;
   margin-top: 2.5rem;
   margin-bottom: 2.5rem;
-  max-height: 80%;
+  max-height: 200px;
   max-width: 50%;
 }
 
@@ -663,6 +663,12 @@ button {
   color: rgb(244 233 248 / var(--tw-text-opacity));
 }
 
+.img-dev {
+  margin: auto;
+  max-height: 200px;
+  width: auto;
+}
+
 @keyframes float {
   0% {
     box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
@@ -703,6 +709,13 @@ button {
 
   35% {
     transform: rotate(-4deg);
+  }
+}
+
+@media (max-width: 767px) {
+  .img-logo,.img-dev {
+    max-height: 200px;
+    width: auto;
   }
 }
 
@@ -897,9 +910,31 @@ button {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+@media (min-width: 768px) {
+  .md\:col-span-2 {
+    grid-column: span 2 / span 2;
+  }
+
+  .md\:col-span-1 {
+    grid-column: span 1 / span 1;
+  }
+
+  .md\:col-span-3 {
+    grid-column: span 3 / span 3;
+  }
+
+  .md\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
 @media (min-width: 1024px) {
   .lg\:col-span-2 {
     grid-column: span 2 / span 2;
+  }
+
+  .lg\:col-span-3 {
+    grid-column: span 3 / span 3;
   }
 
   .lg\:grid-cols-3 {

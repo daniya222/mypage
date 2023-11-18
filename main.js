@@ -6,8 +6,9 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 
 const typed = new Typed('.rotate-text', {
-  strings: ['fullstuck developer', 'software engineer','part-time traveler'],
-  typeSpeed: 50,
+  strings: ['fullstack developer', 'software engineer','part-time traveler'],
+  typeSpeed: 100,
+  loop: true,
 });
 
 const appreciateBtn = document.getElementById("appreciate");
