@@ -1,5 +1,9 @@
 import Typed from 'typed.js';
 import confetti from 'canvas-confetti';
+import Swiper from 'swiper/bundle';
+import 'swiper/css/bundle';
+import 'swiper/css';
+import 'swiper/css/navigation';
 
 const typed = new Typed('.rotate-text', {
   strings: ['fullstuck developer', 'software engineer'],
@@ -25,4 +29,21 @@ appreciateBtn.addEventListener("click", () => {
     particleCount: 100,
     spread: 160,
   });
+});
+
+const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+  slidesPerView: 1,
+  spaceBetween: 30,
+  pagination: {
+    el: '.swiper-pagination',
+  },
+  autoplay: {
+    delay: 3000, 
+    disableOnInteraction: false, // Autoplay continues even if user interacts with slides
+  },
+
+  
 });

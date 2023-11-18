@@ -37,17 +37,18 @@
     box-shadow: inset 20px 22px 15px -3px rgba(0,0,0,0.1);
   }
   .img-logo{
-    @apply hover:scale-125;
-    max-height: 100px;
-    max-width: 100px;
+    @apply mx-auto my-10;
+    max-height: 80%;
+    max-width: 50%;
   }
-  
-  .img-dev{
-    @apply hover:scale-125
-   
+  .swiper-slide > div{
+    @apply flex items-center;
   }
   .btn-primary{
     @apply bg-purple-normal hover:bg-purple-normal_hover
+  }
+  .logo-tools-wrap img{
+    max-height: 100px;
   }
   .animate-wiggle {
     animation: wiggle 2s linear infinite;
@@ -55,21 +56,25 @@
   .animate-float{
     animation: float 10s ease-in-out infinite;
   }
+  .swiper {
+    width:100%;
+    height: 300px;
+  }
 
   @keyframes float {
-  0% {
-    box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
-    transform: translatey(0px);
+    0% {
+      box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+      transform: translatey(0px);
+    }
+    50% {
+      box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+      transform: translatey(-20px);
+    }
+    100% {
+      box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+      transform: translatey(0px);
+    }
   }
-  50% {
-    box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
-    transform: translatey(-20px);
-  }
-  100% {
-    box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
-    transform: translatey(0px);
-  }
-}
 
   @keyframes wiggle {
     0%, 40%, 100% {

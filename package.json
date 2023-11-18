@@ -17,6 +17,7 @@
   "dependencies": {
     "canvas-confetti": "^1.9.1",
     "confetti-js": "^0.0.18",
+    "swiper": "^11.0.4",
     "typed.js": "^2.1.0"
   }
 }
