@@ -60,6 +60,22 @@
     width:100%;
     height: 300px;
   }
+  .card-image{
+    @apply bg-cover bg-center;
+  }
+  .overlay{
+    @apply h-full bg-purple-normal/70 hidden rounded-lg;
+  }
+  .overlay.show{
+    @apply flex justify-center items-center 
+
+  }
+  .text-img{
+    @apply text-center;
+  }
+  .text-img p{
+    @apply text-purple-light max-w-[80%] m-auto
+  }
 
   @keyframes float {
     0% {

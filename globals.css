@@ -634,6 +634,35 @@ button {
   height: 300px;
 }
 
+.card-image {
+  background-size: cover;
+  background-position: center;
+}
+
+.overlay {
+  display: none;
+  height: 100%;
+  border-radius: 0.5rem;
+  background-color: rgb(144 36 182 / 0.7);
+}
+
+.overlay.show {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-img {
+  text-align: center;
+}
+
+.text-img p {
+  margin: auto;
+  max-width: 80%;
+  --tw-text-opacity: 1;
+  color: rgb(244 233 248 / var(--tw-text-opacity));
+}
+
 @keyframes float {
   0% {
     box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
@@ -693,6 +722,10 @@ button {
   grid-column: span 1 / span 1;
 }
 
+.col-span-3 {
+  grid-column: span 3 / span 3;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -713,14 +746,6 @@ button {
 
 .mt-2 {
   margin-top: 0.5rem;
-}
-
-.mb-1 {
-  margin-bottom: 0.25rem;
-}
-
-.mb-2 {
-  margin-bottom: 0.5rem;
 }
 
 .flex {
@@ -766,6 +791,10 @@ button {
 
 .gap-3 {
   gap: 0.75rem;
+}
+
+.gap-5 {
+  gap: 1.25rem;
 }
 
 .gap-8 {
@@ -826,22 +855,14 @@ button {
   padding: 1.25rem;
 }
 
-.py-16 {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
-}
-
 .px-5 {
   padding-left: 1.25rem;
   padding-right: 1.25rem;
 }
 
-.pt-2 {
-  padding-top: 0.5rem;
-}
-
-.pb-2 {
-  padding-bottom: 0.5rem;
+.py-16 {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 }
 
 .pt-5 {
@@ -866,24 +887,14 @@ button {
   color: rgb(108 27 137 / var(--tw-text-opacity));
 }
 
-.text-white {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.text-purple-darker {
-  --tw-text-opacity: 1;
-  color: rgb(50 13 64 / var(--tw-text-opacity));
-}
-
-.text-black {
-  --tw-text-opacity: 1;
-  color: rgb(0 0 0 / var(--tw-text-opacity));
-}
-
 .text-purple-light {
   --tw-text-opacity: 1;
   color: rgb(244 233 248 / var(--tw-text-opacity));
+}
+
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 @media (min-width: 1024px) {

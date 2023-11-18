@@ -6,7 +6,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 
 const typed = new Typed('.rotate-text', {
-  strings: ['fullstuck developer', 'software engineer'],
+  strings: ['fullstuck developer', 'software engineer','part-time traveler'],
   typeSpeed: 50,
 });
 
@@ -46,4 +46,18 @@ const swiper = new Swiper('.swiper', {
   },
 
   
+});
+
+const images = document.querySelectorAll('.card-image');
+
+images.forEach(function(image) {
+  image.addEventListener('mouseover', () => {
+    const overlay = image.querySelector('.overlay');
+    overlay.classList.add("show");
+  })
+
+  image.addEventListener('mouseout', () => {
+    const overlay = image.querySelector('.overlay');
+    overlay.classList.remove("show");
+  })
 });
