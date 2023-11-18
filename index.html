@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="globals.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Inter:wght@300;400;500;700&family=Montserrat:ital,wght@0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    
+    <title>Daniya</title>
+  </head>
+  <body>
+    <main class="relative">
+      <section class="absolute">
+        <img src="public/ornament.png" height="772" />
+      </section>
+      <section class="relative max-w-4xl mx-auto p-5 lg:p-0  z-10">
+
+        <div class="flex items-center py-16">
+          <div class="border-4 rounded-full w-fit border-purple-dark animate-float">
+            <img src="public/daniya.png" width="150" class="rounded-full p-2" />
+          </div>
+          <div class="ml-8">
+            <h1 class="text-purple-dark">Hello there!<br>I'm Daniya</h1>
+            <h4 class="text-white">I am a <span class="rotate-text"></span></h4>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 my-5">
+          <div class="card bg-primary lg:col-span-2 p-5">
+            <h5 class="mb-3">About me</h5>
+            <p class="text-white">Proficient in WordPress development with four years of experience, specializing in crafting dynamic websites. <br>Skilled in creating HTML5 rotating banners and EDMs, while also adept in HTML, JavaScript, React.js, and Express.js.</p>
+          </div>
+
+          <div class="card bg-primary bg-gradient-to-r from-purple-darker to-purple-700 col-span-1 p-5 flex flex-wrap gap-3 items-center justify-center">
+           
+            <img src="public/react.svg" class="img-logo">
+           
+          </div>
+
+          <div class="card bg-primary col-span-1 p-5">
+            <h5 class="mb-3">Member of</h5>
+            <div><img src="public/devscale.png" width="100%" class="img-dev"></div>
+          </div>
+
+          <div class="card bg-gradient-to-br from-neutral-950 to-zinc-900 cols-pan-1 lg:col-span-2 p-5 flex flex-col justify-between">
+            <h6 class="italic">"Any fool can write code that a computer can understand. Good programmers write code that humans can understand." <br>- Martin Fowler</h6>
+           <div><button id="appreciate" class="mt-2 btn-primary animate-wiggle">Click for confetti</button></div>
+            
+          </div>
+
+        </div>
+      </section>
+    </main>
+    <script type="module" src="main.js"></script>
+  </body>
+</html>
